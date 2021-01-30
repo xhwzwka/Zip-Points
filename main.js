@@ -2,7 +2,7 @@ var zp0 = 0;
 var zp1 = 0;
 var zp2 = 0;
 
-function increment() {
+function inc() {
   zp0 += 1;
   document.getElementById("c0").innerHTML = zp0;
 }
