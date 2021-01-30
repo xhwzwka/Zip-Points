@@ -8,8 +8,8 @@ function inc() {
 }
 
 function convert() {
-  if zp0 >= 10 {
-    if zp1 >= 10 {
+  if (zp0 >= 10) {
+    if (zp1 >= 10) {
       zp1 -= 10;
       zp2 += 1;
       document.getElementById("c1").innerHTML = zp1;
