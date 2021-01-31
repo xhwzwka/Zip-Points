@@ -6,3 +6,8 @@ h1 {
 body {
   background-color: gray;
 }
+
+p {
+  color: #ffffff;
+  font-family: sans-serif;
+}
