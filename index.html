@@ -3,42 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="new.css" />
-    <script>
-      var zp0 = 0;
-      var zp1 = 0;
-      var zp2 = 0;
-      
-      function increment() {
-        zp0++;
-        document.getElementById("c0").innerHTML = zp0;
-      }
-      
-      function convert() {
-        if (zp0 >= 10) {
-          if (zp1 >= 10) {
-            zp1 -= 10;
-            zp2++;
-            document.getElementById("c1").innerHTML = zp1;
-            document.getElementById("c2").innerHTML = zp2;
-          } else {
-            zp0 -= 10;
-            zp1++;
-            document.getElementById("c0").innerHTML = zp0;
-            document.getElementById("c1").innerHTML = zp1;
-          }
-        }
-      }
-    </script>
+    <script src="main.js"></script>
     <title>I am IDLE, yes I am!</title>
   </head>
   <body>
     <div id="navbar">
-      <button>Quasify</button>
+      <button onclick="tab(0);">Exponents</button>
+      <button onclick="tab(1);">Prestige</button>
+      <button onclick="tab(2);">Quasify</button>
+      <button onclick="tab(3);">Omega</button>
     </div>
-    <div id="tab1">
+    <div id="tab1" display="inline.block">
       <h1>You have <span id="c2">0</span> ^2, <span id="c1">0</span> ^1, and <span id="c0">0</span> ^0.</h1>
       <button onclick="increment();">+1 ^0</button>
       <button onclick="convert();">Convert 10 ^0 into a ^1</button>
+      <br />
+      <button id="prestigeButton" onclick="prestige();">Reach ^2 to prestige</button>
+    </div>
+    <div id="tab2" display="none">
+      <p>G</p>
     </div>
   </body>
 </html>
