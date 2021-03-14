@@ -7,21 +7,25 @@
     <title>I am IDLE, yes I am!</title>
   </head>
   <body>
-    <div id="navbar">
+    <h1>You have <span id="c3">0</span> ^3, <span id="c2">0</span> ^2, <span id="c1">0</span> ^1, and <span id="c0">0</span> ^0.</h1>
+    <nav>
       <button onclick="tab(0);">Exponents</button>
-      <button onclick="tab(1);">Prestige</button>
-      <button onclick="tab(2);">Quasify</button>
-      <button onclick="tab(3);">Omega</button>
-    </div>
-    <div id="tab1" display="inline-block">
-      <h1>You have <span id="c2">0</span> ^2, <span id="c1">0</span> ^1, and <span id="c0">0</span> ^0.</h1>
+      <button onclick="tab(1);" style="display: none;">Options</button>
+      <button onclick="tab(2);" style="display: none;">Stats</button>
+      <button onclick="tab(3);" style="display: none;">Acheivements</button>
+      <button onclick="tab(4);">Prestige</button>
+    </nav>
+    <div id="tab0" style="display: inline-block;">
       <button onclick="increment();">+1 ^0</button>
       <button onclick="convert();">Convert 10 ^0 into a ^1</button>
       <br />
-      <button id="prestigeButton" onclick="prestige();">Reach ^2 to prestige</button>
+      <button id="prestigebutton" onclick="prestige();">Reach ^2 to prestige</button>
     </div>
-    <div id="tab2" display="none">
+    <div id="tab4" style="display: none;">
       <p>G</p>
     </div>
+    <footer>
+      <a href="changelog.html">Changelog</a>
+    </footer>
   </body>
 </html>
