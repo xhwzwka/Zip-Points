@@ -25,7 +25,7 @@ function convert() {
       }
     } else {
       zp0 -= 10;
-      zp1 += 1;
+      zp1++;
       document.getElementById("c0").innerHTML = zp0;
       document.getElementById("c1").innerHTML = zp1;
     }
@@ -37,7 +37,12 @@ function prestige() {
     zp0 = 0;
     zp1 = 0;
     zp2 = 0;
+    zp3 = 0;
     prestigee += 100;
+    document.getElementById("c0").innerHTML = 0;
+    document.getElementById("c1").innerHTML = 0;
+    document.getElementById("c2").innerHTML = 0;
+    document.getElementById("c3").innerHTML = 0;
   }
 }
 
