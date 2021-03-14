@@ -46,11 +46,3 @@ function tab(numbr) {
   document.getElementById("tab4").style.display = "none";
   document.getElementById("tab" + numbr).style.display = "inline-block";
 }
-
-for (;;) {
-  if (zp2 > 0) {
-    document.getElementById("prestigebutton").innerHTML = "Prestige for 100 Zip Points";
-  } else {
-    document.getElementById("prestigebutton").innerHTML = "Reach ^2 to prestige!";
-  }
-}
